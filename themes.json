@@ -219,6 +219,61 @@
         "selection-foreground": "d3c6aa",
         "palette": "0=475258,1=e67e80,2=a7c080,3=dbbc7f,4=7fbbb3,5=d699b6,6=83c092,7=d3c6aa,8=475258,9=e67e80,10=a7c080,11=dbbc7f,12=7fbbb3,13=d699b6,14=83c092,15=d3c6aa"
       }
+    },
+    {
+      "name": "Neon Pulse",
+      "palette": {
+        "background": "0F0F23",
+        "foreground": "E8E8FF",
+        "cursor-color": "FF006E",
+        "selection-background": "3A2066",
+        "selection-foreground": "E8E8FF",
+        "palette": "0=1A1A2E,1=FF006E,2=00F5D4,3=FFCC00,4=3A86FF,5=8338EC,6=00BFFF,7=B8B8D0,8=2D2D44,9=FF3D94,10=00FFE0,11=FFD700,12=6AAFFF,13=A855F7,14=00E5FF,15=F0F0FF"
+      }
+    },
+    {
+      "name": "Voronoi Glass",
+      "palette": {
+        "background": "0A1014",
+        "foreground": "C8D4DC",
+        "cursor-color": "40E0D0",
+        "selection-background": "1E3A44",
+        "selection-foreground": "E0F0F5",
+        "palette": "0=0D1519,1=E06C75,2=56D4B8,3=D4A656,4=4FA6D4,5=9B7ED4,6=40E0D0,7=A0B0B8,8=1A2830,9=F07080,10=66E4C8,11=E4B666,12=5FB6E4,13=AB8EE4,14=50F0E0,15=D0E0E8"
+      }
+    },
+    {
+      "name": "Fractal Clouds",
+      "palette": {
+        "background": "12091A",
+        "foreground": "E0D8F0",
+        "cursor-color": "F28779",
+        "selection-background": "2A1F3D",
+        "selection-foreground": "F0E8FF",
+        "palette": "0=1A1025,1=F28779,2=A3BE8C,3=EBCB8B,4=8AADF4,5=C6A0F6,6=8BD5CA,7=CAD3F5,8=24182F,9=FF9F8A,10=B3CE9C,11=FBDB9B,12=9ABDF4,13=D6B0FF,14=9BE5DA,15=E4E8FF"
+      }
+    },
+    {
+      "name": "Plasma Flow",
+      "palette": {
+        "background": "0A0515",
+        "foreground": "F5F0FF",
+        "cursor-color": "FFFFFF",
+        "selection-background": "2D1B4B",
+        "selection-foreground": "FFFFFF",
+        "palette": "0=150A20,1=FF4466,2=44FF88,3=FFDD44,4=4488FF,5=FF44FF,6=44FFFF,7=DDDDFF,8=251530,9=FF6688,10=66FFAA,11=FFEE66,12=66AAFF,13=FF66FF,14=66FFFF,15=FFFFFF"
+      }
+    },
+    {
+      "name": "Minimal Zen",
+      "palette": {
+        "background": "1A1815",
+        "foreground": "D4CFC8",
+        "cursor-color": "D4A574",
+        "selection-background": "2E2A25",
+        "selection-foreground": "E8E4DD",
+        "palette": "0=242019,1=C08070,2=88A080,3=D4A574,4=7090A8,5=A08898,6=78A8A0,7=B8B0A8,8=3A3530,9=D09080,10=98B090,11=E4B584,12=80A0B8,13=B098A8,14=88B8B0,15=D4CFC8"
+      }
     }
   ]
 }

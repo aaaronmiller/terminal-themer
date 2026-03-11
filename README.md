@@ -1,15 +1,16 @@
 # 👻 Ghostty Terminal Themer
 
-A comprehensive, dual-method configuration management system for the [Ghostty terminal emulator](https://ghostty.org) on macOS. Switch between 20 beautiful, curated themes instantly with either a direct command or an interactive fuzzy-finder menu.
+A comprehensive, dual-method configuration management system for the [Ghostty terminal emulator](https://ghostty.org) on macOS. Switch between 25 beautiful, curated themes instantly with either a direct command or an interactive fuzzy-finder menu.
 
 ## ✨ Features
 
-- **20 Curated Themes**: Professionally configured profiles featuring popular themes like Catppuccin, Nord, Dracula, Tokyo Night, and more
+- **25 Curated Themes**: Professionally configured profiles featuring popular themes like Catppuccin, Nord, Dracula, Tokyo Night, plus shader-enhanced themes
+- **Multi-Shader Layering**: Advanced profiles with 2-3 shader combinations for stunning visual effects
 - **Dual Switching Methods**:
   - `ss <number>`: Direct profile switching for speed
   - `gswitch`: Interactive fzf-based fuzzy finder with live preview
 - **Optimized for AI CLI Tools**: No text wrapping, large scrollback, fast rendering
-- **Visual Effects**: Optional shaders from the ghostty-shaders collection
+- **Visual Effects**: Custom Book of Shaders-inspired GLSL shaders
 - **Zero Configuration**: Single installation script sets up everything
 - **Safe Backups**: Automatic configuration backups before changes
 - **Fast Reload**: Instant configuration reload via keyboard shortcut
@@ -18,20 +19,25 @@ A comprehensive, dual-method configuration management system for the [Ghostty te
 
 ### Themes
 
-The system includes 20 carefully crafted profiles with diverse visual styles:
+The system includes 25 carefully crafted profiles with diverse visual styles:
 
 | # | Theme | Style | # | Theme | Style |
 |---|-------|-------|---|-------|-------|
-| 01 | Catppuccin Latte | Light, Pastel | 11 | Monokai Pro | Professional Dark |
-| 02 | Catppuccin Mocha | Cozy Dark | 12 | Ayu Dark | Elegant Dark |
-| 03 | Nord | Arctic Blue | 13 | Material Ocean | Material Design |
-| 04 | Dracula | Vibrant Dark | 14 | Palenight | Soft Purple |
-| 05 | Solarized Dark | Precision Dark | 15 | Oceanic Next | Deep Blue |
-| 06 | Solarized Light | Precision Light | 16 | GitHub Dark | Official GitHub |
-| 07 | Gruvbox Dark | Retro Warm | 17 | Synthwave 84 | Neon Retro |
-| 08 | Gruvbox Light | Retro Warm Light | 18 | Cyberpunk | High-Tech |
-| 09 | Tokyo Night | Night City | 19 | Rose Pine | Natural Vibes |
-| 10 | One Dark | Classic Atom | 20 | Everforest Dark | Forest Green |
+| 01 | Catppuccin Latte | Light, Pastel | 14 | Palenight | Soft Purple |
+| 02 | Catppuccin Mocha | Cozy Dark | 15 | Oceanic Next | Deep Blue |
+| 03 | Nord | Arctic Blue | 16 | GitHub Dark | Official GitHub |
+| 04 | Dracula ⚡ | Galaxy Shaders | 17 | Synthwave 84 ⚡ | Triple-Layer CRT |
+| 05 | Solarized Dark | Precision Dark | 18 | Cyberpunk ⚡ | Neon Dystopia |
+| 06 | Solarized Light | Precision Light | 19 | Rose Pine ⚡ | Aurora Organic |
+| 07 | Gruvbox Dark | Retro Warm | 20 | Everforest Dark | Forest Green |
+| 08 | Gruvbox Light | Retro Warm Light | **21** | **Neon Pulse** ⚡ | **Dual-Shader Glow** |
+| 09 | Tokyo Night | Night City | **22** | **Voronoi Glass** ⚡ | **Cellular Frost** |
+| 10 | One Dark | Classic Atom | **23** | **Fractal Clouds** ⚡ | **fBm Aurora** |
+| 11 | Monokai Pro | Professional Dark | **24** | **Plasma Flow** ⚡ | **Triple Psychedelic** |
+| 12 | Ayu Dark | Elegant Dark | **25** | **Minimal Zen** ⚡ | **Dual-Grain Calm** |
+| 13 | Material Ocean | Material Design | | | |
+
+*⚡ = Multi-shader layered theme with animated effects*
 
 ### Configuration Highlights
 

@@ -1,0 +1,19 @@
+# prompt: nord
+# Apply with: ss --prompt nord (merges palette into starship.toml)
+
+[palettes.nord]
+accent    = "#81a1c1"
+secondary = "#88c0d0"
+warning   = "#ebcb8b"
+success   = "#a3be8c"
+error     = "#bf616a"
+muted     = "#4c566a"
+surface   = "#2e3440"
+# Segment color aliases (maps to starship segment styles)
+red       = "#bf616a"
+peach     = "#ebcb8b"
+yellow    = "#ebcb8b"
+green     = "#a3be8c"
+sapphire  = "#88c0d0"
+lavender  = "#81a1c1"
+crust     = "#2e3440"

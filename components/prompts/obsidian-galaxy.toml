@@ -1,0 +1,19 @@
+# prompt: obsidian-galaxy
+# Apply with: ss --prompt obsidian-galaxy (merges palette into starship.toml)
+
+[palettes.obsidian-galaxy]
+accent    = "#89b4fa"
+secondary = "#94e2d5"
+warning   = "#f9e2af"
+success   = "#a6e3a1"
+error     = "#f38ba8"
+muted     = "#585b70"
+surface   = "#1C2021"
+# Segment color aliases (maps to starship segment styles)
+red       = "#f38ba8"
+peach     = "#f9e2af"
+yellow    = "#f9e2af"
+green     = "#a6e3a1"
+sapphire  = "#94e2d5"
+lavender  = "#89b4fa"
+crust     = "#1C2021"

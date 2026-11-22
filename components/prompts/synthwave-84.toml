@@ -1,0 +1,19 @@
+# prompt: synthwave-84
+# Apply with: ss --prompt synthwave-84 (merges palette into starship.toml)
+
+[palettes.synthwave-84]
+accent    = "#ff7edb"
+secondary = "#03edf9"
+warning   = "#fede5d"
+success   = "#72f1b8"
+error     = "#fe4450"
+muted     = "#463465"
+surface   = "#262335"
+# Segment color aliases (maps to starship segment styles)
+red       = "#fe4450"
+peach     = "#fede5d"
+yellow    = "#fede5d"
+green     = "#72f1b8"
+sapphire  = "#03edf9"
+lavender  = "#ff7edb"
+crust     = "#262335"

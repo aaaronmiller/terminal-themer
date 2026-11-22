@@ -15,6 +15,14 @@ CYAN='\033[0;36m'
 BOLD='\033[1m'
 NC='\033[0m' # No Color
 
+# Detect OS
+OS="unknown"
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    OS="macos"
+elif [[ "$OSTYPE" == "linux"* ]]; then
+    OS="linux"
+fi
+
 # Configuration
 GHOSTTY_DIR="$HOME/.config/ghostty"
 PROFILES_DIR="$GHOSTTY_DIR/profiles"
@@ -65,24 +73,39 @@ error() {
 # Step 1: Check prerequisites
 section "Step 1: Checking Prerequisites"
 
-# Check if Homebrew is installed
-if command -v brew &> /dev/null; then
-    success "Homebrew is installed"
+info "Detected OS: $OS"
 
-    # Check and install fzf
-    if command -v fzf &> /dev/null; then
-        success "fzf is already installed"
-    else
-        info "Installing fzf via Homebrew..."
-        if brew install fzf; then
-            success "fzf installed successfully"
-        else
-            warning "Failed to install fzf. You can install it manually later: brew install fzf"
-        fi
-    fi
+# Check and install fzf
+if command -v fzf &> /dev/null; then
+    success "fzf is already installed"
 else
-    warning "Homebrew not found. Please install fzf manually if you want to use gswitch"
-    info "Install Homebrew: /bin/bash -c \"\$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\""
+    info "fzf not found — attempting install..."
+    if [[ "$OS" == "macos" ]] && command -v brew &> /dev/null; then
+        if brew install fzf; then
+            success "fzf installed via Homebrew"
+        else
+            warning "Failed to install fzf. Install manually: brew install fzf"
+        fi
+    elif [[ "$OS" == "linux" ]]; then
+        if command -v dnf &> /dev/null; then
+            if sudo dnf install -y fzf; then
+                success "fzf installed via dnf"
+            else
+                warning "Failed to install fzf. Install manually: sudo dnf install fzf"
+            fi
+        elif command -v apt &> /dev/null; then
+            if sudo apt install -y fzf; then
+                success "fzf installed via apt"
+            else
+                warning "Failed to install fzf. Install manually: sudo apt install fzf"
+            fi
+        else
+            warning "Could not auto-install fzf. Install manually for your distro."
+        fi
+    else
+        warning "Could not auto-install fzf."
+        info "macOS: brew install fzf  |  Fedora/RHEL: sudo dnf install fzf  |  Debian/Ubuntu: sudo apt install fzf"
+    fi
 fi
 
 # Step 2: Create directory structure
@@ -129,8 +152,8 @@ done
 
 info "Cleanup complete"
 
-# Step 4: Install profile configurations
-section "Step 4: Installing Profile Configurations"
+# Step 4: Install profile configurations and components
+section "Step 4: Installing Profiles and Components"
 
 # Copy all profile files from repo to profiles directory
 if [[ -d "$REPO_DIR/profiles" ]]; then
@@ -140,6 +163,14 @@ if [[ -d "$REPO_DIR/profiles" ]]; then
 else
     error "Profile directory not found in repository"
     exit 1
+fi
+
+# Install modular components
+if [[ -d "$REPO_DIR/components" ]]; then
+    cp -rf "$REPO_DIR/components" "$GHOSTTY_DIR/"
+    success "Installed components (colors / fonts / effects / prompts)"
+else
+    warning "Components directory not found — modular mixing unavailable"
 fi
 
 # Step 5: Clone shader repository
@@ -237,10 +268,9 @@ window-width = 140
 window-height = 40
 
 # Font configuration
-font-family = "BerkeleyMono Nerd Font"
+font-family = "JetBrainsMono Nerd Font"
 font-size = 14
 adjust-cell-height = 35%
-line-height = 1.15
 
 # Default theme - Nord
 background = 2e3440
@@ -271,15 +301,11 @@ palette = 15=#eceff4
 window-theme = dark
 background-opacity = 1.0
 unfocused-split-opacity = 0.75
-renderer = metal
 scrollback-limit = 25000
 mouse-scroll-multiplier = 3
 
-# Text rendering (no wrapping for AI CLI tools)
-text-wrap = false
-
 # Keybinds
-keybind = cmd+shift+r=reload_config
+keybind = super+shift+r=reload_config
 EOF
 
 success "Created default configuration file"

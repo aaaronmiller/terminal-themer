@@ -1,0 +1,19 @@
+# prompt: rose-pine
+# Apply with: ss --prompt rose-pine (merges palette into starship.toml)
+
+[palettes.rose-pine]
+accent    = "#c4a7e7"
+secondary = "#9ccfd8"
+warning   = "#f6c177"
+success   = "#31748f"
+error     = "#eb6f92"
+muted     = "#6e6a86"
+surface   = "#191724"
+# Segment color aliases (maps to starship segment styles)
+red       = "#eb6f92"
+peach     = "#f6c177"
+yellow    = "#f6c177"
+green     = "#31748f"
+sapphire  = "#9ccfd8"
+lavender  = "#c4a7e7"
+crust     = "#191724"

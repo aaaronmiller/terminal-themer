@@ -1,0 +1,19 @@
+# prompt: palenight
+# Apply with: ss --prompt palenight (merges palette into starship.toml)
+
+[palettes.palenight]
+accent    = "#82aaff"
+secondary = "#89ddff"
+warning   = "#ffcb6b"
+success   = "#c3e88d"
+error     = "#f07178"
+muted     = "#4b5263"
+surface   = "#292d3e"
+# Segment color aliases (maps to starship segment styles)
+red       = "#f07178"
+peach     = "#ffcb6b"
+yellow    = "#ffcb6b"
+green     = "#c3e88d"
+sapphire  = "#89ddff"
+lavender  = "#82aaff"
+crust     = "#292d3e"

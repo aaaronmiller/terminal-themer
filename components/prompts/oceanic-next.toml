@@ -1,0 +1,19 @@
+# prompt: oceanic-next
+# Apply with: ss --prompt oceanic-next (merges palette into starship.toml)
+
+[palettes.oceanic-next]
+accent    = "#6699cc"
+secondary = "#99c794"
+warning   = "#fac863"
+success   = "#99c794"
+error     = "#ec5f67"
+muted     = "#65737e"
+surface   = "#1b2b34"
+# Segment color aliases (maps to starship segment styles)
+red       = "#ec5f67"
+peach     = "#fac863"
+yellow    = "#fac863"
+green     = "#99c794"
+sapphire  = "#99c794"
+lavender  = "#6699cc"
+crust     = "#1b2b34"

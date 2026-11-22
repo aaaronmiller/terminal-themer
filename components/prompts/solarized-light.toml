@@ -1,0 +1,19 @@
+# prompt: solarized-light
+# Apply with: ss --prompt solarized-light (merges palette into starship.toml)
+
+[palettes.solarized-light]
+accent    = "#268bd2"
+secondary = "#2aa198"
+warning   = "#b58900"
+success   = "#859900"
+error     = "#dc322f"
+muted     = "#93a1a1"
+surface   = "#fdf6e3"
+# Segment color aliases (maps to starship segment styles)
+red       = "#dc322f"
+peach     = "#b58900"
+yellow    = "#b58900"
+green     = "#859900"
+sapphire  = "#2aa198"
+lavender  = "#268bd2"
+crust     = "#fdf6e3"

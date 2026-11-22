@@ -1,0 +1,19 @@
+# prompt: tokyo-night
+# Apply with: ss --prompt tokyo-night (merges palette into starship.toml)
+
+[palettes.tokyo-night]
+accent    = "#7aa2f7"
+secondary = "#7dcfff"
+warning   = "#e0af68"
+success   = "#9ece6a"
+error     = "#f7768e"
+muted     = "#414868"
+surface   = "#1a1b26"
+# Segment color aliases (maps to starship segment styles)
+red       = "#f7768e"
+peach     = "#e0af68"
+yellow    = "#e0af68"
+green     = "#9ece6a"
+sapphire  = "#7dcfff"
+lavender  = "#7aa2f7"
+crust     = "#1a1b26"

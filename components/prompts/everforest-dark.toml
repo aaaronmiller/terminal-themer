@@ -1,0 +1,19 @@
+# prompt: everforest-dark
+# Apply with: ss --prompt everforest-dark (merges palette into starship.toml)
+
+[palettes.everforest-dark]
+accent    = "#7fbbb3"
+secondary = "#a7c080"
+warning   = "#dbbc7f"
+success   = "#a7c080"
+error     = "#e67e80"
+muted     = "#5c6a72"
+surface   = "#2d353b"
+# Segment color aliases (maps to starship segment styles)
+red       = "#e67e80"
+peach     = "#dbbc7f"
+yellow    = "#dbbc7f"
+green     = "#a7c080"
+sapphire  = "#a7c080"
+lavender  = "#7fbbb3"
+crust     = "#2d353b"

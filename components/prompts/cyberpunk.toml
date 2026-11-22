@@ -1,0 +1,19 @@
+# prompt: cyberpunk
+# Apply with: ss --prompt cyberpunk (merges palette into starship.toml)
+
+[palettes.cyberpunk]
+accent    = "#ff2079"
+secondary = "#0abdc6"
+warning   = "#ffff00"
+success   = "#0abdc6"
+error     = "#ff0000"
+muted     = "#1a1a2e"
+surface   = "#0d0208"
+# Segment color aliases (maps to starship segment styles)
+red       = "#ff0000"
+peach     = "#ffff00"
+yellow    = "#ffff00"
+green     = "#0abdc6"
+sapphire  = "#0abdc6"
+lavender  = "#ff2079"
+crust     = "#0d0208"

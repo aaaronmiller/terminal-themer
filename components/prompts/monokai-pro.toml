@@ -1,0 +1,19 @@
+# prompt: monokai-pro
+# Apply with: ss --prompt monokai-pro (merges palette into starship.toml)
+
+[palettes.monokai-pro]
+accent    = "#78dce8"
+secondary = "#a9dc76"
+warning   = "#ffd866"
+success   = "#a9dc76"
+error     = "#ff6188"
+muted     = "#727072"
+surface   = "#2d2a2e"
+# Segment color aliases (maps to starship segment styles)
+red       = "#ff6188"
+peach     = "#ffd866"
+yellow    = "#ffd866"
+green     = "#a9dc76"
+sapphire  = "#a9dc76"
+lavender  = "#78dce8"
+crust     = "#2d2a2e"

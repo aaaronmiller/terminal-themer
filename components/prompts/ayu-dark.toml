@@ -1,0 +1,19 @@
+# prompt: ayu-dark
+# Apply with: ss --prompt ayu-dark (merges palette into starship.toml)
+
+[palettes.ayu-dark]
+accent    = "#39bae6"
+secondary = "#95e6cb"
+warning   = "#ffb454"
+success   = "#c2d94c"
+error     = "#ff3333"
+muted     = "#3d424d"
+surface   = "#0d1017"
+# Segment color aliases (maps to starship segment styles)
+red       = "#ff3333"
+peach     = "#ffb454"
+yellow    = "#ffb454"
+green     = "#c2d94c"
+sapphire  = "#95e6cb"
+lavender  = "#39bae6"
+crust     = "#0d1017"

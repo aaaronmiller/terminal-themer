@@ -1,0 +1,19 @@
+# prompt: gruvbox-dark
+# Apply with: ss --prompt gruvbox-dark (merges palette into starship.toml)
+
+[palettes.gruvbox-dark]
+accent    = "#458588"
+secondary = "#689d6a"
+warning   = "#d79921"
+success   = "#98971a"
+error     = "#cc241d"
+muted     = "#928374"
+surface   = "#282828"
+# Segment color aliases (maps to starship segment styles)
+red       = "#cc241d"
+peach     = "#d79921"
+yellow    = "#d79921"
+green     = "#98971a"
+sapphire  = "#689d6a"
+lavender  = "#458588"
+crust     = "#282828"

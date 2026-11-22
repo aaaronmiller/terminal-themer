@@ -1,0 +1,19 @@
+# prompt: one-dark
+# Apply with: ss --prompt one-dark (merges palette into starship.toml)
+
+[palettes.one-dark]
+accent    = "#61afef"
+secondary = "#56b6c2"
+warning   = "#e5c07b"
+success   = "#98c379"
+error     = "#e06c75"
+muted     = "#5c6370"
+surface   = "#282c34"
+# Segment color aliases (maps to starship segment styles)
+red       = "#e06c75"
+peach     = "#e5c07b"
+yellow    = "#e5c07b"
+green     = "#98c379"
+sapphire  = "#56b6c2"
+lavender  = "#61afef"
+crust     = "#282c34"

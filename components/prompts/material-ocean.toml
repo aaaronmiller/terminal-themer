@@ -1,0 +1,19 @@
+# prompt: material-ocean
+# Apply with: ss --prompt material-ocean (merges palette into starship.toml)
+
+[palettes.material-ocean]
+accent    = "#82aaff"
+secondary = "#89ddff"
+warning   = "#ffcb6b"
+success   = "#c3e88d"
+error     = "#f07178"
+muted     = "#546e7a"
+surface   = "#0f111a"
+# Segment color aliases (maps to starship segment styles)
+red       = "#f07178"
+peach     = "#ffcb6b"
+yellow    = "#ffcb6b"
+green     = "#c3e88d"
+sapphire  = "#89ddff"
+lavender  = "#82aaff"
+crust     = "#0f111a"

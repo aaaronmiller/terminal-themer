@@ -1,0 +1,19 @@
+# prompt: catppuccin-latte
+# Apply with: ss --prompt catppuccin-latte (merges palette into starship.toml)
+
+[palettes.catppuccin-latte]
+accent    = "#1e66f5"
+secondary = "#179299"
+warning   = "#df8e1d"
+success   = "#40a02b"
+error     = "#d20f39"
+muted     = "#acb0be"
+surface   = "#eff1f5"
+# Segment color aliases (maps to starship segment styles)
+red       = "#d20f39"
+peach     = "#df8e1d"
+yellow    = "#df8e1d"
+green     = "#40a02b"
+sapphire  = "#179299"
+lavender  = "#1e66f5"
+crust     = "#eff1f5"

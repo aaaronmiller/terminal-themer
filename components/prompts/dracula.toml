@@ -1,0 +1,19 @@
+# prompt: dracula
+# Apply with: ss --prompt dracula (merges palette into starship.toml)
+
+[palettes.dracula]
+accent    = "#bd93f9"
+secondary = "#8be9fd"
+warning   = "#f1fa8c"
+success   = "#50fa7b"
+error     = "#ff5555"
+muted     = "#6272a4"
+surface   = "#282a36"
+# Segment color aliases (maps to starship segment styles)
+red       = "#ff5555"
+peach     = "#f1fa8c"
+yellow    = "#f1fa8c"
+green     = "#50fa7b"
+sapphire  = "#8be9fd"
+lavender  = "#bd93f9"
+crust     = "#282a36"
